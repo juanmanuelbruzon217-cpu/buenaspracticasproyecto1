@@ -104,3 +104,8 @@ h2 {
 .tarjeta-reserva button:hover {
     background-color: #b91c1c;
 }
+@media (max-width: 500px) {
+    form, #contenedorReservas, h2, #avisoEstado {
+        max-width: 90%;
+    }
+}
