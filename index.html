@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Eventos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Gestor de Eventos</h1>
+
+    <form id="formularioReserva">
+        <label for="nombreAsistente">Asistente</label>
+        <input type="text" id="nombreAsistente" placeholder="Nombre completo" required>
+
+        <label for="tipoEvento">Evento</label>
+        <select id="tipoEvento" required>
+            <option value="">-- Selecciona --</option>
+            <option value="Conferencia">Conferencia</option>
+            <option value="Concierto">Concierto</option>
+            <option value="Evento deportivo">Evento deportivo</option>
+            <option value="Taller">Taller</option>
+        </select>
+
+        <label for="fechaEvento">Fecha</label>
+        <input type="date" id="fechaEvento" required>
+
+        <label for="horaEvento">Hora</label>
+        <input type="time" id="horaEvento" required>
+
+        <button type="submit" id="btnReservar">Confirmar reserva</button>
+    </form>
+
+    <p id="avisoEstado"></p>
+
+    <h2>Reservas activas</h2>
+    <div id="contenedorReservas"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
