@@ -54,6 +54,11 @@ function procesarReserva() {
     mostrarAviso(`Reserva confirmada para ${nombre}.`, "exito");
     document.getElementById("formularioReserva").reset();
 }
+function eliminarEvento(id) {
+    listaEventos = listaEventos.filter((ev) => ev.id !== id);
+    guardarEventos();
+    renderizarLista();
+}
 function renderizarLista() {
     const contenedor = document.getElementById("contenedorReservas");
 
@@ -70,6 +75,7 @@ function renderizarLista() {
                 <strong>${ev.nombre} — ${ev.evento}</strong>
                 <small>${ev.fecha} · ${ev.hora}</small>
             </div>
+            <button onclick="eliminarEvento('${ev.id}')">Cancelar</button>
         </div>
     `
         )
