@@ -21,3 +21,8 @@ Aplicación web que permite a los usuarios reservar eventos de forma rápida y s
 - HTML5
 - CSS3
 - JavaScript (Vanilla JS)
+
+## Despliegue en AWS
+
+
+| Juan Manuel Bruzon | http://cuc-bp-eq04-bruzon-sitio-2026.s3-website-us-east-1.amazonaws.com | cuc-bp-eq04-bruzon-sitio-2026 | cuc-bp-eq04-bruzon-privado-2026 |
