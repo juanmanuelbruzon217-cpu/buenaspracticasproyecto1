@@ -21,3 +21,6 @@ Aplicación web que permite a los usuarios reservar eventos de forma rápida y s
 - HTML5
 - CSS3
 - JavaScript (Vanilla JS)
+
+   ## Despliegue en AWS
+| Andrés Bustamante Heredia | http://cuc-bp-eq04-bustamante-sitio-2026.s3-website-us-east-1.amazonaws.com | cuc-bp-eq04-bustamante-sitio-2026 | cuc-bp-eq04-bustamante-privado-2026 |
