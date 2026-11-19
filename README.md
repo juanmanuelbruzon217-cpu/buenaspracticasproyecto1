@@ -24,5 +24,7 @@ Aplicación web que permite a los usuarios reservar eventos de forma rápida y s
 
 ## Despliegue en AWS
 
-
+| Integrante | URL del sitio | Bucket del sitio | Bucket privado |
+|---|---|---|---|
 | Juan Manuel Bruzon | http://cuc-bp-eq04-bruzon-sitio-2026.s3-website-us-east-1.amazonaws.com | cuc-bp-eq04-bruzon-sitio-2026 | cuc-bp-eq04-bruzon-privado-2026 |
+| Andrés Bustamante Heredia | http://cuc-bp-eq04-bustamante-sitio-2026.s3-website-us-east-1.amazonaws.com | cuc-bp-eq04-bustamante-sitio-2026 | cuc-bp-eq04-bustamante-privado-2026 |
