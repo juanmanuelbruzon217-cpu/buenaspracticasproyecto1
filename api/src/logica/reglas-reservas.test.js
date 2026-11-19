@@ -37,6 +37,9 @@ describe('hayConflicto', () => {
   it('no choca si empieza justo cuando la otra termina', () => {
     expect(hayConflicto(existentes, { recurso: 'Sonido', inicio: '2026-12-01T12:00:00', fin: '2026-12-01T14:00:00' })).toBe(false);
   });
+  it('detecta el choque aunque el recurso cambie en mayusculas', () => {
+    expect(hayConflicto(existentes, { recurso: 'sonido', inicio: '2026-12-01T11:00:00', fin: '2026-12-01T13:00:00' })).toBe(true);
+  });
 });
 
 describe('calcularResumen', () => {

@@ -20,11 +20,16 @@ function validarFechas(inicio, fin) {
   return horas > 0 && horas <= MAX_HORAS_RESERVA;
 }
 
+// Los recursos se comparan sin importar mayusculas ni espacios sobrantes.
+function normalizar(texto) {
+  return String(texto).trim().toLowerCase();
+}
+
 // Dos reservas del mismo recurso chocan si sus horarios se solapan.
 // Una que termina justo cuando otra empieza NO choca.
 function hayConflicto(existentes, nueva) {
   return existentes.some(r =>
-    r.recurso === nueva.recurso &&
+   normalizar(r.recurso) === normalizar(nueva.recurso) &&
     r.estado !== 'cancelada' &&
     new Date(nueva.inicio) < new Date(r.fin) &&
     new Date(nueva.fin) > new Date(r.inicio)
